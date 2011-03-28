@@ -10,13 +10,15 @@ Ir = zeros(512, 753);
 
 for y = 1:512
     for x = 1:753
-        r = (x-0.5)*512/753;
+%         +0.00001 so floor/ceil work as i want
+        r = (x+0.5)*512/753+0.00001;
+        
         xl = floor(r);
         xr = ceil(r);
         al = r - xl;
         ar = xr - r;
-        vl = img_in[xl];
-        vr = img_in[xr];
+        vl = img_in(y, max(1, xl));
+        vr = img_in(y, min(512, xr));
         
         v = vl*ar + vr*al;
         Ir(y, x) = v;
