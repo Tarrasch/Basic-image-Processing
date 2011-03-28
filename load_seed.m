@@ -3,7 +3,6 @@ function [ my_images ] = load_seed( path )
 
 my_images=zeros(5, 512, 512);
 
-size(my_images)
 for i = 1:5 
     s = [path num2str(i) '.tif'];
     M = double(imread(s));
