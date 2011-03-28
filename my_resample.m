@@ -15,8 +15,6 @@ for y = 1:512
         xr = ceil(r);
         al = r - xl;
         ar = xr - r;
-%         xl = x*512/753;
-%         xr = (x+1)*512/753;
         vl = img_in[xl];
         vr = img_in[xr];
         
