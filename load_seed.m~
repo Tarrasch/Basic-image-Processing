@@ -1,0 +1,12 @@
+function [ images ] = load_seed( path )
+%UNTITLED2 Given path, like "img/rum_crisp" loads "img/rum_crisp#.tif"
+
+images =zeros(5);
+
+for i = 1:5 
+    s = [path num2str(i) '.tif'];
+   images(i) = imread(s);
+end
+
+end
+
