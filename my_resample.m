@@ -26,5 +26,11 @@ end
 
 % Now we just keep middle part
 
+img_out = Ir(:, 121:632);
+
+if ~isequal(size(img_out), [512, 512])
+   error('fel2'); 
+end
+
 end
 
