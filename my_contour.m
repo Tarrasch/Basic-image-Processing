@@ -1,4 +1,4 @@
-function [xc,yc]=contour(Ib)
+function [xc,yc]=my_contour(Ib)
 %[xc,yc]=contour(Ib)
 %
 %Searches the boundary for an object in the binary image Ib.
@@ -11,9 +11,9 @@ function [xc,yc]=contour(Ib)
 %xc and yc are the output boundary coordinates.
 %
 
-% Mats Kvarström 010110 modified 020123
+% Mats Kvarstrï¿½m 010110 modified 020123
 % Modified 030121 by John Gustafsson
-% Modified 060120 by Anders Sjšgren to row/col indexation from single index style (help sub2ind)
+% Modified 060120 by Anders Sjï¿½gren to row/col indexation from single index style (help sub2ind)
 
 %%% Notation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % (xc,yc): coordinates of boundary in image
